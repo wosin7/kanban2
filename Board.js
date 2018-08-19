@@ -6,7 +6,6 @@ var board = {
     },
     element: document.querySelector('#board .column-container')
 };
-
 document.querySelector('#board .create-column').addEventListener('click', function() {
     var name = prompt('Enter a column name');
     var data = new FormData();

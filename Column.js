@@ -1,8 +1,8 @@
-function Column(name) {
+function Column(id, name) {
   	var self = this;
 
-  	this.id = randomString();
-  	this.name = name;
+		this.id = id;
+    this.name = name || 'No name given';
   	this.element = generateTemplate('column-template', { name: this.name, id: this.id });
 
   	this.element.querySelector('.column').addEventListener('click', function (event) {
@@ -50,10 +50,7 @@ Column.prototype = {
 			});
 	}
 };
-function Column(id, name) {
-	this.id = id;
-	this.name = name || 'No name given';
-}
+
 
 
 

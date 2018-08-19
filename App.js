@@ -1,12 +1,13 @@
 // OGÓLNA FUNKCJA
 var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 var myHeaders = {
-  'X-Client-Id': '3335',
-  'X-Auth-Token': '66edacbeb78af2706ef0abe154516135',
-  'Content-Type': 'application/json; charset=utf-8'
+	//'Content-Type': 'application/json; charset=utf-8',
+	'X-Auth-Token': '66edacbeb78af2706ef0abe154516135',
+	'X-Client-Id': '3335'
+  
 };
 
-fetch(baseUrl + '/board', { headers: myHeaders })
+fetch(baseUrl +'/board', { headers: myHeaders })
   .then(function(resp) {
     return resp.json();
   })
