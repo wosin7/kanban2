@@ -56,6 +56,7 @@ body {margin: 0;}
   list-style: none;
   margin: 5px;
   padding: 0px;
+ 
 }
 .card-description {
   margin: 2px 0;
@@ -67,4 +68,7 @@ body {margin: 0;}
   margin-bottom: 5px;
   border: 2px solid lightgrey;
   background-color: lightblue;
+}
+.column-card-list {
+  min-height: 100px;
 }
